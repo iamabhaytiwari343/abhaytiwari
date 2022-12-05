@@ -1,10 +1,8 @@
 .home-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
+      rgba($themeClrPrimary, 0.8)),
     url(../../assets/svg/common-bg.svg);
   background-position: center;
 
@@ -25,10 +23,12 @@
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     transform: translateY(-50%);
+
     @include respond(tab-port) {
       display: none;
     }
   }
+
   &__mouse-scroll-cont {
     position: absolute;
     bottom: 3%;
@@ -52,7 +52,7 @@
     transition: background .3s;
 
     &:hover {
-      background: rgba(#fff,.1);
+      background: rgba(#fff, .1);
     }
 
     &--bd-none {
@@ -84,6 +84,7 @@
     margin: 3rem auto 0 auto;
     max-width: 80rem;
   }
+
   &__cta {
     margin-top: 5rem;
     text-align: center;
@@ -92,32 +93,39 @@
 
 .about {
   background: rgb(250, 250, 250);
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
+
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 8rem;
     }
+
     &-title {
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem;
+
       @include respond(phone) {
         font-size: 2.4rem;
       }
     }
+
     &-details-para {
       font-size: 1.8rem;
       color: grey;
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem;
+
       &--hl {
         font-weight: 700;
         margin: 0 3px;
       }
+
       &:last-child {
         margin-bottom: 4rem;
       }
@@ -149,11 +157,13 @@
     &-img-cont {
       overflow: hidden;
     }
+
     &-img {
       width: 100%;
       display: block;
       object-fit: cover;
     }
+
     &-content {
       padding: 2rem 0;
       display: flex;
@@ -169,16 +179,19 @@
         font-weight: 700;
         font-size: 2.8rem;
         margin-bottom: 2rem;
+
         @include respond(phone) {
           font-size: 2.4rem;
         }
       }
+
       &-desc {
         font-size: 1.8rem;
         color: grey;
         max-width: 60rem;
         line-height: 1.7;
         margin-bottom: 3rem;
+
         @include respond(phone) {
           font-size: 1.7rem;
         }
@@ -188,11 +201,9 @@
 }
 
 .contact {
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
+      rgba($themeClrPrimary, 0.8)),
     url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
@@ -208,16 +219,20 @@
     border-radius: $commonBorderRadius;
 
     margin: 5rem auto 0 auto;
+
     @include respond(phone) {
       padding: 3rem;
     }
   }
+
   &__form-field {
     margin-bottom: 4rem;
+
     @include respond(phone) {
       margin-bottom: 3rem;
     }
   }
+
   &__form-label {
     color: #666;
     font-size: 1.4rem;
@@ -227,6 +242,7 @@
     display: block;
     text-align: left;
   }
+
   &__form-input {
     color: #333;
     padding: 2rem;
@@ -237,6 +253,7 @@
     background: rgba(rgb(240, 240, 240), 1);
     border-radius: $commonBorderRadius;
     font-weight: 600;
+
     /* Code for Modern Browsers */
     &::placeholder {
       color: #999;
@@ -281,11 +298,13 @@
       font-size: 1.6rem;
     }
   }
+
   &__btn {
     width: 30%;
 
     padding: 2rem 4rem;
     font-size: 1.6rem;
+
     @include respond(phone) {
       width: 100%;
     }
